@@ -21,7 +21,7 @@ parameters:
       enabled: true
       source:
         engine: git
-        address: https://www.github.com/odoo/odoo
+        address: https://github.com/codebergau/odoo-community
       database:
         engine: postgres
         host: 127.0.0.1

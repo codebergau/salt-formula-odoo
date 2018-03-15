@@ -3,7 +3,7 @@
 odoo
 ====
 
-From ERP to CRM, eCommerce and CMS. Download Odoo or use it in the cloud. Grow Your Business.
+A comprehensive Enterprise Resource Planning (ERP) suite.
 
 Sample pillars
 ==============
@@ -24,7 +24,7 @@ Single odoo service
         admin_password: password
         source:
           engine: git
-          address: https://www.github.com/odoo/odoo
+          address: https://github.com/codebergau/odoo-community
         database:
           engine: postgres
           host: 127.0.0.1
@@ -33,6 +33,11 @@ Single odoo service
           user: odoo
         mail:
           engine: console
+
+Openstack odoo service
+
+.. code-block:: yaml
+    insert later
 
 Read more
 =========

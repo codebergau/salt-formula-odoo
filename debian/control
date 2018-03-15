@@ -1,15 +1,15 @@
-Source: salt-formula-odoo
-Maintainer: Michael Kuty <mail@michaelkuty.eu>
+Source: salt-formula-odoo9
+Maintainer: Codeberg <contact@codeberg.com.au>
 Section: admin
 Priority: optional
 Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.6
-Homepage: http://www.tcpcloud.eu
-Vcs-Browser: https://github.com/tcpcloud/salt-formula-odoo
-Vcs-Git: https://github.com/tcpcloud/salt-formula-odoo.git
+Homepage: http://codeberg.com.au
+Vcs-Browser: https://github.com/codebergau/salt-formula-odoo9
+Vcs-Git: https://github.com/codebergau/salt-formula-odoo9.git
 
-Package: salt-formula-odoo
+Package: salt-formula-odoo9
 Architecture: all
 Depends: ${misc:Depends}, salt-master, reclass
-Description: odoo salt formula
- Install and configure odoo system.
+Description: Handy salt formula for Odoo Community v9
+ Install and configure odoo community v9 ERP.

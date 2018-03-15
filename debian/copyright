@@ -1,7 +1,7 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: salt-formula-odoo
+Upstream-Name: salt-formula-odoo9
 Upstream-Contact: 
-Source: https://github.com/tcpcloud/salt-formula-odoo
+Source: https://github.com/codebergau/salt-formula-odoo9
 
 Files: *
 Copyright: 2014-2015 APACHE 2.0

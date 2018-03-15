@@ -1,0 +1,13 @@
+file_client: local
+cachedir: /home/adam/myProjects/git/salt-formula-odoo9/tests/build/salt/cache
+verify_env: False
+
+file_roots:
+  base:
+  - /home/adam/myProjects/git/salt-formula-odoo9/tests/build/file_root
+  - /home/adam/myProjects/git/salt-formula-odoo9/tests/..
+
+pillar_roots:
+  base:
+  - /home/adam/myProjects/git/salt-formula-odoo9/tests/build/pillar_root
+  - /home/adam/myProjects/git/salt-formula-odoo9/tests/pillar

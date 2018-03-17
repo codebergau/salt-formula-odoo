@@ -1,7 +1,7 @@
-{%- from "odoo/map.jinja" import server with context %}
+{%- from "odoo9/map.jinja" import server with context %}
 # Fill in documentation details
 doc:
-  name: odoo
+  name: odoo9
   description: Some service info
   role:
     server:

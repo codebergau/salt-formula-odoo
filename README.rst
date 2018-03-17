@@ -1,6 +1,6 @@
 
 ====
-odoo
+odoo9
 ====
 
 A comprehensive Enterprise Resource Planning (ERP) suite.
@@ -8,11 +8,11 @@ A comprehensive Enterprise Resource Planning (ERP) suite.
 Sample pillars
 ==============
 
-Single odoo service
+Single odoo9 service
 
 .. code-block:: yaml
 
-    odoo:
+    odoo9:
       server:
         enabled: true
         workers: 1
@@ -24,17 +24,17 @@ Single odoo service
         admin_password: password
         source:
           engine: git
-          address: https://github.com/codebergau/odoo-community
+          address: https://github.com/codebergau/odoo9-community
         database:
           engine: postgres
           host: 127.0.0.1
-          name: odoo
+          name: odoo9
           password: password
-          user: odoo
+          user: odoo9
         mail:
           engine: console
 
-Openstack odoo service
+Openstack odoo9 service
 
 .. code-block:: yaml
     insert later
@@ -42,4 +42,4 @@ Openstack odoo service
 Read more
 =========
 
-* https://www.odoo.com
+* https://www.odoo9.com

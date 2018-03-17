@@ -1,5 +1,5 @@
 
-{%- set source_engine = salt['pillar.get']('odoo:server:source:engine') %}
+{%- set source_engine = salt['pillar.get']('odoo9:server:source:engine') %}
 
 {%- load_yaml as base_defaults %}
 {%- if source_engine == 'git' %}
@@ -55,23 +55,23 @@ Debian:
   - libxml2-dev
   - libxslt1-dev
   dir:
-    base: /srv/odoo/venv
-    home: /var/lib/odoo
-    workspace: /srv/odoo/workspace
+    base: /srv/odoo9/venv
+    home: /var/lib/odoo9
+    workspace: /srv/odoo9/workspace
 RedHat:
   pkgs:
   - python-psycopg2
   dir:
-    base: /srv/odoo/venv
-    home: /var/lib/odoo
-    workspace: /srv/odoo/workspace
+    base: /srv/odoo9/venv
+    home: /var/lib/odoo9
+    workspace: /srv/odoo9/workspace
 {%- else %}
 Debian:
   pkgs:
-  - odoo
+  - odoo9
   dir:
-    base: /usr/lib/odoo
+    base: /usr/lib/odoo9
 {%- endif %}
 {%- endload %}
 
-{%- set server = salt['grains.filter_by'](base_defaults, merge=salt['pillar.get']('odoo:server')) %}
+{%- set server = salt['grains.filter_by'](base_defaults, merge=salt['pillar.get']('odoo9:server')) %}

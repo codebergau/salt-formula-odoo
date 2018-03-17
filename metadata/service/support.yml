@@ -1,5 +1,5 @@
 parameters:
-  odoo:
+  odoo9:
     _support:
       collectd:
         enabled: false

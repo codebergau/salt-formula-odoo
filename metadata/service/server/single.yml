@@ -1,16 +1,16 @@
 applications:
-- odoo
+- odoo9
 classes:
-- service.odoo.support
+- service.odoo9.support
 - service.postgresql.server.local
 - service.python.environment
 parameters:
   _param:
-    postgresql_odoo_password: password
+    postgresql_odoo9_password: password
   python:
     environment:
       development: true
-  odoo:
+  odoo9:
     server:
       enabled: true
       workers: 1
@@ -21,34 +21,34 @@ parameters:
       enabled: true
       source:
         engine: git
-        address: https://github.com/codebergau/odoo-community
+        address: https://github.com/codebergau/odoo9-community
       database:
         engine: postgres
         host: 127.0.0.1
-        name: odoo
-        password: ${_param:postgresql_odoo_password}
-        user: odoo
+        name: odoo9
+        password: ${_param:postgresql_odoo9_password}
+        user: odoo9
       mail:
         engine: console
   postgresql:
     server:
       database:
-        odoo:
+        odoo9:
           enabled: true
           encoding: 'UTF8'
           locale: 'cs_CZ'
           users:
-          - name: odoo
-            password: ${_param:postgresql_odoo_password}
+          - name: odoo9
+            password: ${_param:postgresql_odoo9_password}
             host: localhost
             createdb: true
             rights: all privileges
   nginx:
     server:
       site:
-        odoo_server:
+        odoo9_server:
           enabled: true
-          type: odoo
-          name: odoo
+          type: odoo9
+          name: odoo9
           host:
-            name: odoo.com
+            name: odoo9.com

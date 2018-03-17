@@ -1,9 +1,9 @@
 applications:
-- odoo
+- odoo9
 classes:
-- service.odoo.support
+- service.odoo9.support
 parameters:
-  odoo:
+  odoo9:
     server:
       enabled: true
       bind:
